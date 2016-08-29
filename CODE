@@ -1,1 +1,29 @@
+package com.company;
+import java.util.Scanner;
+import java.util.Random;
+public class Main {
 
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+
+        while (true) {
+            System.out.println("Guess my number 1-100!");
+            int guess = input.nextInt();
+            System.out.println();
+
+            Random randomGenerator = new Random();
+            for (int i = 1; i <= 1; ++i) {
+                int random = randomGenerator.nextInt(100);
+
+                if (guess == random) {
+                    System.out.println("Holy crap! Gongratulations you guessed my number, which was " + random + "!");
+                    System.out.println();
+
+                } else if (guess != random) {
+                    System.out.println("Sorry. You did not correctly guess my number, which was " + random + ".");
+                    System.out.println();
+                }
+            }
+        }
+    }
+}
